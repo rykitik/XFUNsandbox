@@ -1,9 +1,12 @@
 <template lang="pug">
 .headerPage
-  .navBtn(v-on:click="changeViewStatus")
-    img(src="../assets/menu.svg", alt="")
-  .logo
-    img(src="../assets/logo.png", alt="")
+  .headerElem
+    .navBtn(v-on:click="changeViewStatus")
+      img(src="../assets/menu.svg", alt="")
+    .logo
+      img(src="../assets/logo.png", alt="")
+  .headerElem
+    .userManageHeaderPanel Войти
 </template>
 <script>
 export default {
@@ -23,11 +26,23 @@ export default {
   background-color: #62C2FE;
   display: flex;
   align-items: center;
-  z-index: 100px;
+  justify-content: space-between;
+  z-index: 100;
 }
-.navBtn {
+.headerElem {
+  display: flex;
+  align-items: center;
+}
+.navBtn,
+.userManageHeaderPanel {
   padding: 0 30px;
   cursor: pointer;
+}
+.userManageHeaderPanel {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 29px;
+  color: #04528A;
 }
 .logo {
   padding: 0 20px;
