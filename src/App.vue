@@ -3,7 +3,7 @@
   Header
   .container
     SideNav(v-if="$store.state.isViewMenu")
-    home
+    router-view
 </template>
 
 <script>
@@ -35,6 +35,7 @@ body {
   margin: 0;
   width: 100%;
   height: 100vh;
+  background-color: #E7E7E7;
 }
 .container {
   display: flex;

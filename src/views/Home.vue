@@ -1,7 +1,6 @@
-<template>
-  <div class="home">
-    <h1>Home</h1>
-  </div>
+<template lang="pug">
+.home
+  h1 Home
 </template>
 
 <script>
@@ -11,4 +10,7 @@ export default {
 </script>
 
 <style scoped>
+.home {
+  padding: 15px 25px;
+}
 </style>
