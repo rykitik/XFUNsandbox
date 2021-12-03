@@ -42,6 +42,10 @@ nav.SideNav
 .SideNav a:active {
   opacity: 0.4;
 }
+.router-link-exact-active {
+  width: 100%;
+  background-color: #FDFDFD;
+}
 @media screen and (max-height: 450px) {
   .SideNav {
     padding-top: 15px;
