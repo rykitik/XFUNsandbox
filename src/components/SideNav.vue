@@ -1,22 +1,22 @@
 <template lang="pug">
 nav.SideNav
   .navItem
-    a(href="") Популярное
+    router-link(:to="{ name: 'Feed' }") Популярное
   .navItem
-    a(href="") Свежее
+    router-link(:to="{ name: 'Fresh' }") Свежее
   .navItem
-    a(href="") Подписки
+    router-link(:to="{ name: 'Subscriptions' }") Подписки
   .navItem
-    a(href="") TUB
+    router-link(:to="{ name: 'Topic', params: { topicID: 1 } }") TUB
   .navItem
-    a(href="") Minecraft
+    router-link(:to="{ name: 'Topic', params: { topicID: 2 } }") Minecraft
   .navItem
-    a(href="") HYPPER
+    router-link(:to="{ name: 'Topic', params: { topicID: 3 } }") HYPPER
 </template>
 <style lang="scss" scoped>
 .SideNav {
   font-family: "Roboto", sans-serif;
-  height: 100%;
+  height: calc(100vh - 108px);
   min-width: 280px;
   max-width: 280px;
   width: 25%;

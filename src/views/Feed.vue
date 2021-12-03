@@ -1,5 +1,6 @@
 <template lang="pug">
-.feed
+.feed 
+  h1 Популярное
   .posts
     PostComponent
 </template>
