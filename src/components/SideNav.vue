@@ -20,10 +20,14 @@ nav.SideNav
   min-width: 280px;
   max-width: 280px;
   width: 25%;
-  z-index: 1;
   background-color: #F2F2F2;
   overflow: hidden;
   padding-top: 35px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 15;
 }
 .SideNav a {
   padding: 8px 8px 8px 32px;

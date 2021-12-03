@@ -4,7 +4,7 @@
     .navBtn(v-on:click="changeViewStatus")
       img(src="../assets/menu.svg", alt="")
     .logo
-      img(src="../assets/logo.png", alt="")
+      img(src="~@/assets/logo.png", alt="")
   .headerElem
     .userManageHeaderPanel Войти
 </template>
@@ -13,7 +13,6 @@ export default {
   name: "Header",
   methods: {
     changeViewStatus() {
-      console.log("cloick");
       this.$store.commit("changeViewMenu");
     },
   },
@@ -22,12 +21,16 @@ export default {
 <style scoped>
 .headerPage {
   width: 100%;
-  height: 108px;
+  height: 90px;
   background-color: #62C2FE;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 100;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 20;
 }
 .headerElem {
   display: flex;
@@ -50,5 +53,6 @@ export default {
 }
 .logo img {
   margin: auto;
+  width: 60px;
 }
 </style>

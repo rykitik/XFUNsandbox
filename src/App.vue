@@ -7,14 +7,14 @@
 </template>
 
 <script>
-import Home from "./views/Home";
+import Feed from "./views/Feed";
 import Header from "./components/Header";
 import SideNav from "./components/SideNav";
 
 export default {
   name: "App",
   components: {
-    Home,
+    Feed,
     Header,
     SideNav,
   },
@@ -23,6 +23,7 @@ export default {
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("./assets/reset.css");
 * {
   font-family: Roboto;
 }
