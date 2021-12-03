@@ -1,5 +1,6 @@
 <template lang="pug">
-.fresh Свежее
+.fresh 
+  h1 Свежее
   .posts
     PostComponent
 </template>

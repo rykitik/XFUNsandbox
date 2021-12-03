@@ -31,6 +31,7 @@ nav.SideNav
 }
 .SideNav a {
   padding: 8px 8px 8px 32px;
+  margin: 0 auto;
   text-decoration: none;
   font-size: 25px;
   color: #000;
@@ -43,8 +44,9 @@ nav.SideNav
   opacity: 0.4;
 }
 .router-link-exact-active {
-  width: 100%;
+  width: 60%;
   background-color: #FDFDFD;
+  border-radius: 15px;
 }
 @media screen and (max-height: 450px) {
   .SideNav {
