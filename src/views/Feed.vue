@@ -22,7 +22,6 @@ export default {
 }
 .posts {
   width: 70%;
-  min-height: 100%;
   margin: 5%;
 }
 </style>

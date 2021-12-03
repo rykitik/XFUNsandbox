@@ -3,6 +3,8 @@
   h1 Свежее
   .posts
     PostComponent
+    PostComponent
+    PostComponent
 </template>
 
 <script>
@@ -22,7 +24,6 @@ export default {
 }
 .posts {
   width: 70%;
-  min-height: 100%;
   margin: 5%;
 }
 </style>

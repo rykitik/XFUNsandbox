@@ -40,6 +40,7 @@ body {
 }
 .container {
   display: flex;
-  height: calc(100% - 108px);
+  min-height: 100vh;
+  height: auto;
 }
 </style>
