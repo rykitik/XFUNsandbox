@@ -1,6 +1,6 @@
 <template lang="pug">
 #app
-  Overlay
+  //- Overlay
   main
     Header
     .container
