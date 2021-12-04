@@ -16,7 +16,7 @@ nav.SideNav
 <style lang="scss" scoped>
 .SideNav {
   font-family: "Roboto", sans-serif;
-  height: calc(100vh - 108px);
+  height: 100vh;
   min-width: 280px;
   max-width: 280px;
   width: 25%;
