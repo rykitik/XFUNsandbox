@@ -14,7 +14,7 @@ nav.sideNav
       router-link(:to="{ name: 'Topic', params: { topicID: 3 } }") HYPPER
 </template>
 <style lang="scss" scoped>
-.SideNav {
+.sideNav {
   height: 100vh;
   min-width: 280px;
   max-width: 280px;
