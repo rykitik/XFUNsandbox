@@ -4,7 +4,11 @@
     .logoOverlay
       img(src="~@/assets/bigLogo.png")
     .authForm 
-      Button
+      .title Вход в аккуант
+      Button(:text="'Почта'")
+      Button(:text="'ВКонтакте'")
+      Button(:text="'Google'")
+    .close.unselectable(@click="closeAuth") ×
 </template>
 <script>
 import Overlay from "./elements/Overlay";
@@ -15,6 +19,11 @@ export default {
     Overlay,
     Button,
   },
+  methods: {
+    closeAuth() {
+      this.$store.commit('changeViewAuth')
+    }
+  }
 };
 </script>
 <style lang="scss">
@@ -25,7 +34,7 @@ export default {
 
 .logoOverlay {
   background-color: #6FCFFF;
-  padding: 30px;
+  padding: 80px 30px;
   width: 40%;
   max-width: 40%;
   height: 100%;
@@ -39,8 +48,23 @@ export default {
 }
 
 .authForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 50%;
-  padding: 30px;
   height: 100%;
+}
+.title {
+  font-size: 40px;
+  line-height: 54px;
+}
+.close {
+  position: absolute;
+  cursor: pointer;
+  font-size: 70px;
+  line-height: 40px;
+  top: 3%;
+  right: 2.5%;
 }
 </style>

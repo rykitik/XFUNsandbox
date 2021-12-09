@@ -6,15 +6,18 @@
     .logo
       img(src="~@/assets/logo.png", alt="")
   .headerElem
-    .userManageHeaderPanel Войти
+    .userManageHeaderPanel(v-on:click="closeAuth") Войти
 </template>
 <script>
 export default {
   name: "Header",
   methods: {
     changeViewStatus() {
-      this.$store.commit("changeViewMenu");
+      this.$store.commit("changeViewMenu")
     },
+    closeAuth() {
+      this.$store.commit('changeViewAuth')
+    }
   },
 };
 </script>

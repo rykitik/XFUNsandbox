@@ -1,6 +1,6 @@
 <template lang="pug">
 #app
-  Auth
+  Auth(v-if="$store.state.isViewAuth")
   main
     Header
     .container
@@ -27,9 +27,7 @@ export default {
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import url("./assets/reset.css");
-* {
-  font-family: "Roboto", sans-serif;
-}
+@import url("./assets/style.css");
 #app {
   margin: 0;
   width: 100%;
