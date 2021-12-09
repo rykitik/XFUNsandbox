@@ -1,22 +1,25 @@
 <template lang="pug">
 #app
-  Header
-  .container
-    SideNav(v-if="$store.state.isViewMenu")
-    router-view
+  //- Overlay
+  main
+    Header
+    .container
+      SideNav(v-if="$store.state.isViewMenu")
+      router-view
 </template>
 
 <script>
 import Feed from "./views/Feed";
 import Header from "./components/Header";
 import SideNav from "./components/SideNav";
-
+import Overlay from "./components/Overlay";
 export default {
   name: "App",
   components: {
     Feed,
     Header,
     SideNav,
+    Overlay,
   },
 };
 </script>
@@ -30,12 +33,13 @@ export default {
 #app {
   margin: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 body {
+  position: relative;
   margin: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: #E7E7E7;
 }
 .container {

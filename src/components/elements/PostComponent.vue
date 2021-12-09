@@ -21,10 +21,10 @@
 .post {
   width: 100%;
   background-color: #FFF;
+  padding: 15px 25px;
   border-radius: 10px;
-  padding: 20px;
-  margin: 20px 0;
-  filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.25));
+  margin-bottom: 35px;
+  filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.25));
 }
 .postHeader {
   display: flex;

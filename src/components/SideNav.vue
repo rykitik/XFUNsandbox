@@ -1,4 +1,4 @@
-<template lang="pug">
+ <template lang="pug">
 nav.sideNav
     .navItem
       router-link(:to="{ name: 'Feed' }") Популярное
@@ -16,6 +16,7 @@ nav.sideNav
 <style lang="scss" scoped>
 .sideNav {
   font-family: "Roboto", sans-serif;
+  height: 100vh;
   min-width: 280px;
   max-width: 280px;
   width: 25%;

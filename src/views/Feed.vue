@@ -3,10 +3,12 @@
   h1 Популярное
   .posts
     PostComponent
+    PostComponent
+    PostComponent
 </template>
 
 <script>
-import PostComponent from "../components/elements/post/PostComponent";
+import PostComponent from "../components/elements/PostComponent";
 export default {
   name: "Feed",
   components: {
