@@ -2,7 +2,7 @@ import Vue from 'vue'
 import './plugins/axios'
 import App from './App.vue'
 import router from './router'
-import store from "./assets/store";
+// import store from "./assets/store";
 import VueMeta from "vue-meta";
 
 Vue.config.productionTip = false
@@ -18,6 +18,6 @@ Vue.config.productionTip = false;
 
 new Vue({
   router,
-  store,
+  // store,
   render: h => h(App)
 }).$mount('#app')
