@@ -1,29 +1,48 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import Vue from "vue";
+import VueRouter from "vue-router";
+import FeedView from "../views/Feed.vue";
 
-Vue.use(VueRouter)
-
+Vue.use(VueRouter);
 const routes = [
   {
-    path: '/',
-    name: 'home',
-    component: HomeView
+    path: "/",
+    name: "feed",
+    component: FeedView
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    path: "/fresh",
+    name: "fresh",
+    component: () => import("@/views/Fresh.vue")
+  },
+  {
+    path: "/subscription",
+    name: "subscriptions",
+    component: () => import("@/views/Subscriptions.vue")
+  },
+  {
+    path: "/topic/:topicID",
+    name: "topic",
+    component: () => import("@/views/CommunityTopic.vue")
   }
-]
-
+];
 const router = new VueRouter({
-  mode: 'history',
+  mode: "history",
   base: process.env.BASE_URL,
   routes
-})
+});
+// const originalPush = router.replace;
+// router.replace = function push(location, onResolve, onReject) {
+//   if (onResolve || onReject) {
+//     return originalPush.call(this, location, onResolve, onReject);
+//   }
 
-export default router
+//   return originalPush.call(this, location).catch((err) => {
+//     if (VueRouter.isNavigationFailure(err)) {
+//       return err;
+//     }
+
+//     return Promise.reject(err);
+//   });
+// };
+
+export default router;
