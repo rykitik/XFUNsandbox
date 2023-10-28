@@ -1,10 +1,10 @@
 <template lang="pug">
 #app 
-  AuthComp(v-if="isViewAuth")
+  AuthComp(v-if="$store.state.isViewAuth")
   main
     HeaderComponent
     .container
-      SideNav(v-if="isViewMenu")
+      SideNav(v-if="$store.state.isViewMenu")
       router-view
   </template>
   
@@ -21,16 +21,6 @@
       SideNav,
       AuthComp,
     },
-    computed: {
-      isViewMenu() {
-        return true;
-        // return $store.state.isViewMenu;
-      },
-      isViewAuth() {
-        return false;
-        // return $store.state.isViewAuth;
-      },
-    }
   };
   </script>
   

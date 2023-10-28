@@ -4,6 +4,12 @@
     .overlayContent 
       slot
 </template>
+</template>
+<script>
+export default {
+  name: "OverlayComponent"
+};
+</script>
 <style scoped>
 .overlay {
   position: absolute;
