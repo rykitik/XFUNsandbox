@@ -21,7 +21,7 @@ export default {
   },
   methods: {
     closeAuth() {
-      // this.$store.commit('changeViewAuth')
+      this.$store.commit('changeViewAuth')
     }
   }
 };

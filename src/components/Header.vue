@@ -13,10 +13,10 @@ export default {
   name: "HeaderComponent",
   methods: {
     changeViewStatus() {
-      // this.$store.commit("changeViewMenu")
+      this.$store.commit("changeViewMenu")
     },
     closeAuth() {
-      // this.$store.commit('changeViewAuth')
+      this.$store.commit('changeViewAuth')
     }
   },
 };

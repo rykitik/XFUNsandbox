@@ -1,11 +1,11 @@
  <template lang="pug">
 nav.sideNav
     .navItem
-      router-link(:to="{ name: 'FeedView' }") Популярное
+      router-link(:to="{ name: 'Feed' }") Популярное
     .navItem
-      router-link(:to="{ name: 'FreshView' }") Свежее
+      router-link(:to="{ name: 'Fresh' }") Свежее
     .navItem
-      router-link(:to="{ name: 'SubscriptionsView' }") Подписки
+      router-link(:to="{ name: 'Subscriptions' }") Подписки
     .navItem
       router-link(:to="{ name: 'Topic', params: { topicID: 1 } }") TUB
     .navItem

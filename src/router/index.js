@@ -6,22 +6,22 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: "/",
-    name: "feed",
+    name: "Feed",
     component: FeedView
   },
   {
     path: "/fresh",
-    name: "fresh",
+    name: "Fresh",
     component: () => import("@/views/Fresh.vue")
   },
   {
     path: "/subscription",
-    name: "subscriptions",
+    name: "Subscriptions",
     component: () => import("@/views/Subscriptions.vue")
   },
   {
     path: "/topic/:topicID",
-    name: "topic",
+    name: "Topic",
     component: () => import("@/views/CommunityTopic.vue")
   }
 ];
